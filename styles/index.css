@@ -35,12 +35,12 @@
 .cover .moon img {width: 100%;}
 /* -----------------------------------------------------------------------가운데 달 끝! */
 .cover .port {
-    font-size: 34px; position: absolute;
+    font-size: 2.125em; position: absolute;
     top: 50%; left: 50%; transform: translate(-50%, -50%);
 }
 .cover .name {
     font-weight: 700;
-    font-size: 50px; position: absolute;
+    font-size: 3.125em; position: absolute;
     bottom: 10%; right: 15%; text-shadow:0 4px 10px rgba(0,0,0,0.2);
     animation: pulse_n 2s ease-in-out infinite;
 }
@@ -57,7 +57,7 @@
 }
 .cover .orbit * {
     font-family: 'JoseonGulim';
-    font-size: 20px; 
+    font-size: 1.25em; 
     position: absolute;
 }
 .cover .orbit .item1 {top: 31%; left: 35%;}
@@ -68,7 +68,7 @@
     width: 100%; min-height: 100vh;
     background: url('../images/intro_bg.jpg') no-repeat center center / cover;
     position: relative; overflow: hidden;
-    padding: 100px; display: flex; 
+    padding: 100px; display: flex; justify-content: space-between;
 }
 .intro > h2 {
     color: #FFF059; font-size: 200px;
@@ -78,7 +78,11 @@
     color: #FFF059; font-size: 200px; font-family: 'Playfair Display';
     font-weight: 700; line-height: 0.7;
 }
-.intro .description {display: flex; flex-flow: column nowrap;}
+.intro .description {
+    display: flex; flex-flow: column nowrap;
+    gap: 50px; justify-content: flex-start; align-items: center;
+}
+
 .intro .description .about {}
 .intro .description .about h2 {
     font-weight: 1000; font-size: 30px;
@@ -90,12 +94,49 @@
 }
 .intro .description .profile {
     width: 350px; height: 370px;
+    text-align: center;
 }
-.intro .description .profile img {width: 100%;}
-.intro .description .personal {}
-.intro .description .personal .name {}
-.intro .description .personal .e_name {}
+.intro .description .profile img {height: 100%;}
+.intro .description .personal {
+    
+}
+.intro .description .personal .name {
+    text-align: center; font-weight: 700;
+    font-size: 1.25em; padding-bottom: 20px;
+}
+.intro .description .personal .name > span {font-size: 0.75em;}
 .intro .description .personal dl {
-    display: grid;
+    display: grid; gap: 10px;
     grid-template-columns: 120px 1fr;
+    column-gap: 20px;
+}
+.intro .description .personal dl dt {
+    font-weight: 1000; line-height: 1.5;
+}
+.intro .description .personal dl dd {
+    line-height: 1.5; font-family: 'JoseonGulim';
+}
+.intro .resume {display: flex; flex-flow: column; gap: 50px;}
+.intro .resume .right {}
+.intro .resume .right h2 {
+    font-weight: 1000; font-size: 30px;
+    padding-bottom: 10px; line-height: 1.5;
+}
+.intro .resume .right dl {
+    display: grid; gap: 10px;
+    grid-template-columns: 120px 1fr;
+    column-gap: 20px;
+}
+.intro .resume .right dl dt {
+    font-weight: 1000; line-height: 1.5;
+}
+.intro .resume .right dl dd {
+    line-height: 1.5; font-family: 'JoseonGulim';
+}
+.intro .resume .skill {}
+.intro .resume .skill h2 {
+    font-weight: 1000; font-size: 30px;
+    padding-bottom: 10px; line-height: 1.5;}
+.intro .resume .skill p {
+    line-height: 1.5; font-family: 'JoseonGulim';
 }
