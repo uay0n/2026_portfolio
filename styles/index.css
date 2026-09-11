@@ -145,6 +145,7 @@
     width: 100%; height:100vh;
     position: relative; display: flex; flex-flow: column;
     justify-content: flex-end; overflow: hidden;
+    transition: transform .8s cubic-bezier(.16,1,.3,1);
 }
 .file > h1 {
     z-index: 999; font-size: 15.625em; line-height: 0.6;
@@ -162,29 +163,69 @@
     width: 100%;
 }
 .file .img .kind {
-    position: absolute; font-size: 1.563em; font-weight: 1000;
-    z-index: 1000;
+    position: absolute; font-size: 1.563em; font-weight: 400;
+    z-index: 1000; color: #222;
 }
 .file .first {z-index: 900;}
 .file .first .year {
     top: 20px; right: 150px;
-    color: #FFC300;
 }
 .file .second {z-index: 800;}
 .file .second .wed_d {
     top: 20px; left: 100px;
-    color: #FFC300;
 }
 .file .third {z-index: 700;}
 .file .third .mo_d {
     top: 20px; right: 150px;
-    color: #fff;
 }
 .file .fourth {z-index: 600;}
 .file .fourth .vis_d {
     top: 20px; left: 340px;
-    color: #fff;
 }
-/* ===================================호버 */
-.file .img:not(.first):hover {transform: translateY(-35px) rotate(-1deg);}
-.file .img:not(.first) {transition: transform 0.45s cubic-bezier(.22,1,.36,1);}
+.file .img:not(.first){
+    transition: transform .7s cubic-bezier(.16,1,.3,1);
+    cursor: pointer;
+}
+
+.file .img:not(.first):hover{
+    transform: translateY(-20px);
+}
+/* -------------------------------------------------------------------웹디자인 시작 */
+.wed_disign {
+    width: 100%; height:100vh;
+    position: relative; overflow: hidden;
+}
+.wed_disign img {
+    height: 100%; width: 100%;
+    object-fit: cover;
+}
+.wed_disign .wed_d {
+    position: absolute; font-size: 1.563em; font-weight: 400;
+    z-index: 1000; color: #222; top: 40px; left: 100px;
+}
+/* -------------------------------------------------------------------모바일(모청)디자인 시작 */
+.mobile_design {
+    width: 100%; height:100vh;
+    position: relative; overflow: hidden;
+}
+.mobile_design img {
+    height: 100%; width: 100%;
+    object-fit: cover;
+}
+.mobile_design .wed_d {
+    position: absolute; font-size: 1.563em; font-weight: 400;
+    z-index: 1000; color: #222; top: 40px; left: 100px;
+}
+/* -------------------------------------------------------------------비주얼디자인 시작 */
+.visual_design {
+    width: 100%; height:100vh;
+    position: relative; overflow: hidden;
+}
+.visual_design img {
+    height: 100%; width: 100%;
+    object-fit: cover;
+}
+.visual_design .wed_d {
+    position: absolute; font-size: 1.563em; font-weight: 400;
+    z-index: 1000; color: #222; top: 40px; left: 100px;
+}
