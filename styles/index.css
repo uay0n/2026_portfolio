@@ -191,17 +191,95 @@
     transform: translateY(-20px);
 }
 /* -------------------------------------------------------------------웹디자인 시작 */
-.wed_disign {
+.wed_design {
     width: 100%; height:100vh;
     position: relative; overflow: hidden;
+    background: url(../images/second_big.svg) center center / cover no-repeat; ; 
 }
-.wed_disign img {
-    height: 100%; width: 100%;
-    object-fit: cover;
-}
-.wed_disign .wed_d {
-    position: absolute; font-size: 1.563em; font-weight: 400;
+.wed_design .wed_d {
+    position: absolute; font-size: 1.563em;
     z-index: 1000; color: #222; top: 40px; left: 100px;
+}
+.wed_design .swiper {
+    z-index: 1000;
+    top: 360px; left: 160px; position: absolute;
+    width: 100%; height: calc(100% - 360px);
+}
+.wed_design .swiper .swiper-wrapper {}
+.wed_design .swiper .swiper-wrapper .swiper-slide {
+    display: flex; height: 456px;
+}
+.wed_design .swiper .swiper-wrapper .swiper-slide .left {
+    width: 464px; height: 516px; padding: 0 40px ; border-right: 1px solid #3C3C3C;
+    height: fit-content;
+}
+.wed_design .swiper .swiper-wrapper .swiper-slide .left * {color: #3C3C3C;}
+.wed_design .swiper .swiper-wrapper .swiper-slide .left .top {
+    display: flex; gap: 25px; flex-flow: column nowrap;
+}
+.wed_design .swiper .swiper-wrapper .swiper-slide .left .top .num_color {
+    display: flex; justify-content: space-between;
+}
+.wed_design .swiper .swiper-wrapper .swiper-slide .left .top h1 {
+    font-family: 'Playfair Display'; font-size: 6.25em;
+    letter-spacing: 1.1px; font-weight: 900; 
+}
+.wed_design .swiper .swiper-wrapper .swiper-slide .left .top .title {font-size: 0.938em;}
+.wed_design .swiper .swiper-wrapper .swiper-slide .left dl dt {
+    font-weight: 700;
+}
+.wed_design .swiper .swiper-wrapper .swiper-slide .left .duration {
+    padding: 20px 0; font-size: 0.938em;
+}
+.wed_design .swiper .swiper-wrapper .swiper-slide .left .info {
+    display:flex; padding: 8px 0;
+    justify-content:space-between;
+    align-items:center; border-bottom:1px solid #3C3C3C;
+    font-size: 0.938em;
+}
+.wed_design .swiper .swiper-wrapper .swiper-slide .left .info p:nth-child(1) {font-weight: 700;}
+.wed_design .swiper .swiper-wrapper .swiper-slide .middle {
+    padding: 0 40px; display: flex; flex-flow: column nowrap;
+    height: fit-content;
+}
+.wed_design .swiper .swiper-wrapper .swiper-slide .middle * {color: #3C3C3C;}
+.wed_design .swiper .swiper-wrapper .swiper-slide .middle .mid {
+    padding: 20px 0; 
+}
+.wed_design .swiper .swiper-wrapper .swiper-slide .middle .mid h2 {
+    font-family: 'Bodoni Moda'; font-size: 1.25em;
+    font-weight: 900; font-style: italic; padding-bottom: 15px;
+}
+.wed_design .swiper .swiper-wrapper .swiper-slide .middle .mid p {
+    font-size: 0.938em;
+}
+.wed_design .swiper .swiper-wrapper .swiper-slide .middle .top p {line-height: 1.5;}
+.wed_design .swiper .swiper-wrapper .swiper-slide .middle .center .keywords {display: flex; gap: 20px;}
+.wed_design .swiper .swiper-wrapper .swiper-slide .middle .center .keywords p {
+    border-radius: 50px; border: 1px solid #949494;
+    padding: 5px 15px; line-height: 1.5;
+}
+.wed_design .swiper .swiper-wrapper .royal .left .top h1 {
+    line-height: 0.8; text-align: center;
+}
+.wed_design .swiper .swiper-wrapper .hdex .left .top h1 {
+    text-align: center;
+}
+.wed_design .swiper .swiper-wrapper .hdex .left .top .num_color .color {color: #D7FF00; font-weight: 900;}
+.wed_design .swiper .swiper-wrapper .royal .left .top .num_color .color {color: #D72420; font-weight: 900;}
+.wed_design .swiper .swiper-wrapper .espoir .left .top .num_color .color {color: #CE0E2D; font-weight: 900;}
+/* 스와이퍼 버튼 나타내기 + 색상 변경하기 */
+.wed_design .swiper .swiper-pagination {
+    position: absolute;
+    left: calc(50% - 160px);
+    bottom: 40px;
+    transform: translateX(-50%);
+}
+.wed_design .swiper .swiper-pagination-bullet {
+    background: #3C3C3C;
+}
+.wed_design .swiper .swiper-pagination-bullet-active {
+    background: #FFE800;
 }
 /* -------------------------------------------------------------------모바일(모청)디자인 시작 */
 .mobile_design {
