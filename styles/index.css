@@ -418,3 +418,85 @@ html {
     position: absolute; font-size: 1.563em; font-weight: 400;
     z-index: 1000; color: #222; top: 40px; left: 100px;
 }
+#visual_design .visual_wrap {
+    display: flex; z-index: 1000;
+    top: 240px; left: 250px; position: absolute;
+    width: 100%; height: calc(100% - 360px);
+    flex-flow: column; gap: 40px;
+}
+#visual_design .visual_wrap .top {
+    display: flex; gap: 100px;
+}
+#visual_design .visual_wrap .bottom {
+    display: flex; gap: 100px;
+}
+#visual_design .visual_wrap li {}
+#visual_design .visual_wrap li:hover {}
+#visual_design .visual_wrap li button {
+    border: 1px solid #D5D5D5;
+    position: relative;
+    overflow: hidden;
+    width: 400px; height: 300px; padding: 20px;
+    display: flex; flex-flow: column; justify-content: space-between;
+    transition: transform 0.15s ease;
+}
+#visual_design .visual_wrap li button:hover {transform: scale(1.03);}
+#visual_design button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.2;
+}
+#visual_design .visual_wrap li button > * {
+    position: relative; 
+    z-index: 1; 
+}
+#visual_design .visual_wrap li button .title {
+    display: flex; justify-content: space-between;
+}
+#visual_design .visual_wrap li button .title h3 {
+    font-weight: 900; font-size: 1.875em;
+}
+#visual_design .visual_wrap li button .title dl {
+    text-align: right;
+}
+#visual_design .visual_wrap li button .title dl dt {
+    font-size: 0.725em; font-weight: 900;
+}
+#visual_design .visual_wrap li button .title dl dd {
+    font-size: 0.725em; 
+}
+#visual_design .visual_wrap li button .date {
+    text-align: right; font-weight: 900; font-size: 1.875em;
+}
+/* 버튼에 사진 넣기 */
+#visual_design .top li:nth-child(1) button::before {
+    background: url(../images/poster.jpg) no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+}
+#visual_design .top li:nth-child(2) button::before {
+    background: url(../images/detail.png) no-repeat center 18%;
+    background-size: cover;
+    opacity: 0.2;
+}
+#visual_design .top li:nth-child(3) button::before {
+    background: url(../images/wedding_poster.png) no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+}
+#visual_design .bottom li:nth-child(1) button::before {
+    background: url(../images/invitation_1.png) no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+}
+#visual_design .bottom li:nth-child(2) button::before {
+    background: url(../images/invitation_2.png) no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+}
+#visual_design .bottom li:nth-child(3) button::before {
+    background: url(../images/invitation_3.png) no-repeat center center;
+    background-size: cover;
+    opacity: 0.2;
+}
