@@ -5,6 +5,11 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-pagination',
         clickable: true,
     },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    loop: true,
 });
 
 const visualBtn = document.querySelectorAll('#visual_design .visual_wrap button');
