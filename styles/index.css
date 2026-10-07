@@ -199,10 +199,6 @@ html {
     position: relative; overflow: hidden;
     background: url(../images/second_big.svg) center center / cover no-repeat; ; 
 }
-#wed_design .wed_d {
-    position: absolute; font-size: 1.563em;
-    z-index: 1000; color: #222; top: 40px; left: 100px;
-}
 #wed_design .swiper {
     z-index: 1000;
     top: 300px; left: 160px; position: absolute;
@@ -304,16 +300,28 @@ html {
 #wed_design .swiper-slide .move li {}
 #wed_design .swiper-slide .move li a {
     border-radius: 50px; border: 1px solid #949494;
-    padding: 5px 15px; line-height: 1.5; color: #3C3C3C;
+    padding: 5px 15px; line-height: 1.5; 
 }
-#wed_design .espoir .move li a:hover {
+#wed_design .espoir .move li a {
     background-color: #CE0E2D; color: #fff;
 }
-#wed_design .royal .move li a:hover {
+#wed_design .royal .move li a {
     background-color: #D72420; color: #fff;
 }
-#wed_design .hdex .move li a:hover {
-    background-color: #D7FF00; 
+#wed_design .hdex .move li a {
+    background-color: #D7FF00; color: #3C3C3C;
+}
+#wed_design .espoir .move li a:hover {
+    background-color: #fff; color: #3C3C3C;
+    border: 1px solid #949494;
+}
+#wed_design .royal .move li a:hover {
+    background-color: #fff; color: #3C3C3C;
+    border: 1px solid #949494;
+}
+#wed_design .hdex .move li :hover {
+    background-color: #fff; color: #3C3C3C;
+    border: 1px solid #949494;
 }
 /* -------------------------------------------------------------------모바일(모청)디자인 시작 */
 #mobile_design {
@@ -323,10 +331,6 @@ html {
 #mobile_design img {
     height: 100%; width: 100%;
     object-fit: cover;
-}
-#mobile_design .wed_d {
-    position: absolute; font-size: 1.563em; font-weight: 400;
-    z-index: 1000; color: #222; top: 40px; left: 100px;
 }
 #mobile_design .wedding {
     display: flex; z-index: 1000;
@@ -402,8 +406,12 @@ html {
     border-radius: 50px; border: 1px solid #949494;
     padding: 5px 15px; line-height: 1.5; color: #3C3C3C;
 }
-#mobile_design .wedding .move li a:hover {
+#mobile_design .wedding .move li a {
     background-color: #F3C430;
+}
+#mobile_design .wedding .move li a:hover {
+    background-color: #fff; color: #3C3C3C;
+    border: 1px solid #949494;
 }
 /* -------------------------------------------------------------------비주얼디자인 시작 */
 #visual_design {
@@ -413,10 +421,6 @@ html {
 #visual_design img {
     height: 100%; width: 100%;
     object-fit: cover;
-}
-#visual_design .wed_d {
-    position: absolute; font-size: 1.563em; font-weight: 400;
-    z-index: 1000; color: #222; top: 40px; left: 100px;
 }
 #visual_design .visual_wrap {
     display: flex; z-index: 1000;
