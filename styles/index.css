@@ -456,6 +456,10 @@ html {
 }
 #visual_design .visual_wrap li button .title h3 {
     font-weight: 900; font-size: 1.875em;
+    text-align: left;
+}
+#visual_design .visual_wrap li button .title h3>p {
+    font-size: 10px;
 }
 #visual_design .visual_wrap li button .title dl {
     text-align: right;
@@ -499,4 +503,40 @@ html {
     background: url(../images/invitation_3.png) no-repeat center center;
     background-size: cover;
     opacity: 0.2;
+}
+/* 모달 */
+#visual_design .visual_modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none; justify-content: center;
+    align-items: center; z-index: 99999;
+}
+#visual_design .visual_modal.on {
+    display: flex;
+}
+#visual_design .modal_close {
+    position: fixed; top: 30px;
+    right: 50px; font-size: 50px;
+    color: #fff; background: none;
+    border: none; cursor: pointer;
+}
+#visual_design .modal_content {
+    max-height: 90%;
+    overflow: hidden;
+    justify-content: center;
+}
+#visual_design .modal_content img {
+    display: block;
+    max-height: 90vh;
+    width: auto;
+}
+#visual_design .modal_content.detail {
+    height: 800px;
+    overflow-y: auto;
+}
+#visual_design .modal_content.detail img {
+    width: 1080px;
+    height: auto;
+    max-height: none;
 }
